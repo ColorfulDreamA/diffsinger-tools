@@ -63,13 +63,13 @@ def convert(inputFile: str, outputFile: str):
         yaml.dump(output, f, allow_unicode=True)
 
 def main():
-    if(len(sys.argv)<1):
+    if(len(sys.argv)<=1):
         print("Input file:")
         inputFile = input()
     else:
         inputFile = sys.argv[1]
         print("Input file:", inputFile)
-    if(len(sys.argv)<2):
+    if(len(sys.argv)<=2):
         print("Output file:")
         outputFile = input()
     else:
